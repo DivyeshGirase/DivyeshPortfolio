@@ -19,3 +19,6 @@ npm-debug.log
 
 # Ignore coverage (for testing)
 coverage/
+
+# Ignore large .pack files (for GitHub's file size limit)
+*.pack
