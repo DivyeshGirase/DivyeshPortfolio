@@ -1,12 +1,11 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import './globals.css'
 
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import AIChatbot from '@/components/AIChatbot'
 
-const inter = Inter({ subsets: ['latin'] })
+
 
 export const metadata: Metadata = {
   title: 'Divyesh Girase - Portfolio',
@@ -44,7 +43,7 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#8B5CF6" />
       </head>
-      <body className={`${inter.className} bg-gray-900 text-white antialiased`}>
+      <body className="font-inter bg-gray-900 text-white antialiased">
         <div className="min-h-screen flex flex-col">
           <Header />
           <main className="flex-grow">

@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
+  assetPrefix: '/',
   trailingSlash: true,
   experimental: {
     optimizePackageImports: ['framer-motion', 'react-icons'],

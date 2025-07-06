@@ -38,6 +38,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'], // <-- Add this line
         mono: ['Fira Code', 'monospace'],
       },
       animation: {
