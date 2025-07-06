@@ -22,7 +22,7 @@ const nextConfig = {
   compress: true,
   reactStrictMode: true,
   images: {
-    unoptimized: true,
+    domains: ['your-image-source.com'], // Add your image domains here
   },
   webpack: (config, { dev, isServer }) => {
     // Aggressive bundle optimization
@@ -30,7 +30,7 @@ const nextConfig = {
       config.optimization.splitChunks = {
         chunks: 'all',
         minSize: 20000,
-        maxSize: 244000,
+        maxSize: 150000, // Adjusted for better chunk size management
         cacheGroups: {
           default: {
             minChunks: 2,
@@ -56,13 +56,11 @@ const nextConfig = {
             priority: 30,
           },
         },
-      }
+      };
     }
 
-    // Optimize imports - removed problematic alias
-
-    return config
+    return config;
   },
 }
 
-module.exports = nextConfig
+module.exports = nextConfig;
